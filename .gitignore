@@ -1,0 +1,119 @@
+# ==============================================================================
+# 1. Nlack Databases & SQLite WAL Journals
+# ==============================================================================
+nlack.db
+nlack.db-shm
+nlack.db-wal
+nlack.db-journal
+datasniper.db*
+*.sqlite
+*.sqlite3
+*.db
+*.db-shm
+*.db-wal
+
+# ==============================================================================
+# 2. Nlack Exported Intelligence Reports & Vaults
+# ==============================================================================
+exports/
+nlack_intelligence_*
+nlack_export_*
+datasniper_global_*
+datasniper_report_*
+custom_intelligence*
+
+# ==============================================================================
+# 3. Harvested Local Assets (Saved by LocalAssetVault in Script Folder)
+# ==============================================================================
+nlack_*
+nlack_direct_*
+harvested_*
+direct_*
+screen_challenge_*
+solved_page_*
+pdf_*
+csv_*
+xlsx_*
+zip_*
+image_*
+png_*
+jpg_*
+jpeg_*
+webp_*
+gif_*
+tiff_*
+bmp_*
+svg_*
+
+# Ignore loose data dumps in root (while keeping README.md and requirements.txt)
+*.pdf
+*.xlsx
+*.xls
+*.csv
+*.tsv
+*.jsonl
+*.parquet
+*.dat
+
+# Explicitly keep core repository files tracked
+!nlack.py
+!README.md
+!requirements.txt
+!.gitignore
+!LICENSE
+
+# ==============================================================================
+# 4. Credentials, Session Cookies & Proxy Pools
+# ==============================================================================
+.env
+*.env
+.env.*
+cookies.json
+*cookies*.json
+proxies.txt
+*proxies*.txt
+*.pem
+*.key
+
+# ==============================================================================
+# 5. Python, Virtual Environments & Playwright Caches
+# ==============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+venv/
+.venv/
+env/
+ENV/
+
+.playwright/
+playwright-report/
+test-results/
+
+# ==============================================================================
+# 6. IDE & OS Metadata
+# ==============================================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
